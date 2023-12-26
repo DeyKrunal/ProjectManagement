@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <title>DIVISION tag</title>
+    <style>
+        div
+        {
+            border: 2px solid black;
+            width: 8%;
+            text-align: center;
+        }
+        .b1{
+            margin-left: 19%;
+        }
+        .b2{
+            float: right ;
+            margin-right:64%;
+        }
+        .b3{
+            margin:0 auto;
+            margin-right: 20%;
+            margin-left: 10%;
+        }
+        .b4{
+            margin-left:19%;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="b1">
+            <h1>1</h1>
+        </div>
+
+        <div class="b2">
+            <h1>3</h1>
+        </div>
+
+        <div class="b3">
+            <h1>2</h1>
+        </div>
+
+        <div class="b4">
+            <h1>4</h1>
+        </div>
+    </body>
+</html>
