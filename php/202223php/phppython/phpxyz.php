@@ -1,5 +1,0 @@
-<?PHP
-$command_exec = escapeshellcmd('C:/Users/hp/AppData/Local/Programs/Python/Python310/python xyz.py'); 
-$str_output = shell_exec($command_exec); 
-echo $str_output;
- ?>
