@@ -1,0 +1,16 @@
+Enable "Less secure app access" in your Google Account:
+
+Go to your Google Account.
+https://myaccount.google.com/security
+Navigate to the "Security" tab.
+Scroll down to the "Less secure app access" section.
+Turn on "Allow less secure apps."
+Generate an App Password:
+
+While still in the "Security" tab, find the "Signing in to Google" section.
+Click on "App passwords."
+Select "Mail" and "Other (Custom name)" in the app dropdown.
+Click "Generate."
+Copy the App Password:
+
+A 16-character App Password will be generated. Copy this password; you will use it in your script.
