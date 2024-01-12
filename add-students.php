@@ -1,4 +1,5 @@
 <?php
+echo "Hello";
 require_once("connection.php");
 $idd = $_GET['upd'];
 $x = $idd;
