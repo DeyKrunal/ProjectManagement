@@ -10,7 +10,6 @@
             echo "<script>alert('all fiels are required')</script>";
         }
         else{
-<<<<<<< Updated upstream
             $s= "select pwd from admin_tbl where a_name='$aname'";
             $s1=mysqli_fetch_array(mysqli_query($con,$s));
             $enteredPassword = $pwd;
@@ -20,7 +19,6 @@
             }
             else{
                     echo "<script>alert('incorrect...')</script>";
-=======
                 // $s= "select pwd from admin_tbl where a_name='$aname'";
                 // $s1=mysqli_fetch_array(mysqli_query($con,$s));
                 // $enteredPassword = $pwd;
@@ -63,11 +61,9 @@
                         }
                        
                   //  }
-
-                
->>>>>>> Stashed changes
                 }
-            }       
+            }    
+        }   
 
     }
 
