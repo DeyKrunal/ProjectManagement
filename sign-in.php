@@ -36,7 +36,7 @@
                 //echo $x=password_verify($pwd, $s1["f_pwd"]);
                 if($s1["f_name"]==$name && password_verify($pwd, $s1["f_pwd"]) )
                 {
-                    header("location:index.php");            
+                    header("location:faculty_dash.php");            
 
                 }
                 else
