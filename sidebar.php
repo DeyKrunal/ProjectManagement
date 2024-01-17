@@ -33,6 +33,24 @@
                             <!-- <li><a href="profile.html">Profile</a></li> -->
                         </ul>
                     </li>
+<<<<<<< Updated upstream
+=======
+                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-alt"></i><span>Head Faculty</span> </a>
+                        <ul class="ml-menu">
+                            <li><a href="head_faculty.php">All Head Faculty</a></li>
+                            <li><a href="add-Head Faculty.php">Add Head Faculty</a></li>
+                            <!-- <li><a href="profile.html">Profile</a></li> -->
+                        </ul>
+                    </li>
+                  
+                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-alt"></i><span>Group</span> </a>
+                        <ul class="ml-menu">
+                            <li><a href="Faculty.php">All Group</a></li>
+                            <!-- <li><a href="profile.html">Profile</a></li> -->
+                        </ul>
+                    </li>
+                  
+>>>>>>> Stashed changes
                     <!-- <li><a href="parents.html"><i class="zmdi zmdi-account"></i><span>Parents</span> </a></li>                    
                     <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-lock"></i><span>Authentication</span> </a>
                         <ul class="ml-menu">

@@ -10,6 +10,7 @@
             echo "<script>alert('all fiels are required')</script>";
         }
         else{
+<<<<<<< Updated upstream
             $s= "select pwd from admin_tbl where a_name='$aname'";
             $s1=mysqli_fetch_array(mysqli_query($con,$s));
             $enteredPassword = $pwd;
@@ -19,6 +20,52 @@
             }
             else{
                     echo "<script>alert('incorrect...')</script>";
+=======
+                // $s= "select pwd from admin_tbl where a_name='$aname'";
+                // $s1=mysqli_fetch_array(mysqli_query($con,$s));
+                // $enteredPassword = $pwd;
+                // $storedHashedPassword = $s1['pwd'];
+                // if(password_verify($enteredPassword, $storedHashedPassword)){
+                //     header("location:add-students.php");            
+                // }
+                // else{
+                //         echo "<script>alert('incorrect...')</script>";
+                //     }
+                $sql= "select fid,f_name,f_pwd from faculty_tbl where f_name='$name'";
+                $result=mysqli_query($con,$sql);
+                $s1=mysqli_fetch_array($result);
+              // echo $s1["f_pwd"];
+                //echo $x=password_verify($pwd, $s1["f_pwd"]);
+                if($s1["f_name"]==$name && password_verify($pwd, $s1["f_pwd"]) )
+                {
+                    header("location:index.php");            
+
+                }
+                else
+                {   
+                //     $sql="select hid from headfaculty_tbl h join faculty f on h.fid=f.fid where h_status,";
+                //     $result1=mysqli_query($con,$sql);
+                //     $s1=mysqli_fetch_array($result);
+                //    if($s1["f_name"]==$name && $s1["f_pwd"]==$pwd )
+                //     {  
+                //         header("location:index.php");
+                //     }
+                //     else{
+                        $sql="select a_name,a_pwd from admin_tbl where a_name='$name'";
+                        $result=mysqli_query($con,$sql);
+                        $s1=mysqli_fetch_array($result);
+                        if($s1["a_name"]==$name && $s1["a_pwd"]==$pwd )
+                        {
+                            header("location:index.php");
+                        }
+                        else{
+                            echo"<script>alert('Invalid...')</scrpit>";
+                        }
+                       
+                  //  }
+
+                
+>>>>>>> Stashed changes
                 }
             }       
 
