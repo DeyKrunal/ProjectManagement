@@ -1,21 +1,31 @@
 <?php
-echo "Hello";
 require_once("connection.php");
-// $idd = $_GET['upd'];
-$x = $idd;
-$q = "select * from emp where id='$idd'";
-$d = mysqli_query($con, $q);
-$row = mysqli_fetch_array($d);
+$idd = $_GET['upd'];
+// $x = $idd;
+// $q = "select * from emp where id='$idd'";
+// $d = mysqli_query($con, $q);
+// $row = mysqli_fetch_array($d);
 
 if (isset($_REQUEST['b1'])) {
 
-    $fname = $_POST['fname'];
+    $f1 = $_POST['f_name'];
+    $f2 = $_POST['f_email'];
+    $f3 = $_POST['f_phno'];
+    $f4 = $_POST['f_desc'];
+    $f5 = $_POST['f_qualif'];
+    $f6 = $_POST['f_exp'];
+    $f7 = $_POST['f_address'];
+
+
+
     $pass = $_POST['pass1'];
+    $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
+
 
     $fac_img = $_FILES['f1']['name'];
     $path = "upload/" . $fac_img;
 
-    $sql = mysqli_query($con, "insert into emp (name,pass,img) values ('$fname','$pass','$fac_img')");
+    $sql = mysqli_query($con, "insert into faculty_tbl (f_name,f_email,f_phno,f_img,f_desc,f_qualif,f_exp,f_address,f_pwd) values ('$f1','$f2','$f3','$fac_img','$f4','$f5','$f6','$f7','$hashedPassword')");
 
 
 
@@ -849,9 +859,34 @@ if (isset($_POST['updbtn'])) {
                                     <div class="row clearfix">
                                         <div class="col-sm-4 col-md-6 col-lg-12">
                                             <div class="form-group">
-                                                <input type="text" name="fname" class="form-control"
+                                                <input type="text" name="f_name" class="form-control"
                                                     placeholder="First Name" required>
                                             </div>
+                                            <div class="form-group">
+                                                <input type="email" name="f_email" class="form-control"
+                                                    placeholder="First email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="f_phno" class="form-control"
+                                                    placeholder="First phno" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="f_desc" class="form-control"
+                                                    placeholder="First desc" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="f_qualif" class="form-control"
+                                                    placeholder="First qualif" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="f_exp" class="form-control"
+                                                    placeholder="First exp" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="f_address" class="form-control"
+                                                    placeholder="First address" required>
+                                            </div>
+                                            
 
                                             <div class="form-group">
                                                 <input type="password" name="pass1" class="form-control"
